@@ -112,13 +112,11 @@ def verifierLignes(tableau):
 
 def choisirCase(tableau, joueur , caractere):
     input()
-	#Demandez à l'utilisateur de choisir une line et une colonne.
+	#Demandez à l'utilisateur de choisir une ligne et une colonne.
 #==>
 	#Verifiez que  la ligne et la colonne est bien un chiffre entre 1 et 3.
 #==>	
-	#Verifiez que la case n'est pas remplie. pour accéder à une case d'un tableau 
-#==>
-	#Vous utiliserez la syntaxe suivante :  variable = tableau[ligne-1][colonne-1]  
+	#Verifiez que la case n'est pas remplie. pour accéder à une case d'un tableau vous utiliserez la syntaxe suivante :  variable = tableau[ligne-1][colonne-1]  
 #==>
     #Affecter le caractère passé en paramètre au tableau[ligne-1][colonne-1]  
 #==>
