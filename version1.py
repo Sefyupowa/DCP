@@ -30,7 +30,7 @@ def bruteforce3(debut, alphabet, longueur, motDePasse):
         bruteforce3(essai, alphabet, longueur, motDePasse)
 
 def testerMotdePasse(essai, motDePasse):
-    if (essai == motDePasse.decode("ascii")):
+    if (essai == motDePasse.decode()):
         print("mot de passe trouvé : " + essai)
     return
 
