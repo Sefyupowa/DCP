@@ -27,7 +27,6 @@ def testerMotdePasse(essai, motDePasse):
         print("mot de passe trouvé : " + essai)
     return
 
-
 bruteforce1(dictionnaire, niveau1)
 bruteforce2(chiffres, niveau2)
 bruteforce3("", alphabet, 5, niveau3)
