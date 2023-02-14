@@ -1,5 +1,5 @@
 '''
-Le but du programme est d'effectuer un programme pour jouer tic-tac-toe entre deux joueurs.
+Le but est d'effectuer un programme pour jouer tic-tac-toe entre deux joueurs.
 
     [ 1 | 2 | 3 ]
 
