@@ -9,25 +9,18 @@ niveau3 = b"\x79\x6f\x75\x70\x69"
 alphabet = ["p", "y", "u", "i", "o"]
 
 def bruteforce1(dictionnaire, motDePasse):
-    for el in dictionnaire:
-        testerMotdePasse(el, motDePasse)
+    # boucler sur le dictionnaire et tester toutes les possibilitées
+    return
 
 def bruteforce2(chiffres, motDePasse):
-    for el1 in chiffres:
-        testerMotdePasse(el1, motDePasse)
-        for el2 in chiffres:
-            testerMotdePasse(el1 + el2, motDePasse)
-            for el3 in chiffres:
-                testerMotdePasse(el1 + el2 + el3, motDePasse)
+    # comment faire pour afficher toutes les possibilitées avec 1, 2 et 3 ?
+    # (peut être utiliser plusieurs boucles) 
+    return
                 
 
-def bruteforce3(debut, alphabet, longueur, motDePasse):    
-    if len(debut) == longueur:
-        return
-    for el in alphabet:
-        essai = debut + el
-        testerMotdePasse(essai, motDePasse)
-        bruteforce3(essai, alphabet, longueur, motDePasse)
+def bruteforce3(debut, alphabet, longueur, motDePasse):
+    # généraliser le raisonnement (plus difficile)
+    return
 
 def testerMotdePasse(essai, motDePasse):
     if (essai == motDePasse.decode()):
