@@ -125,6 +125,7 @@ def choisirCase(tableau, joueur , caractere):
 
 
 def jouer(tableau):
+	 #le joueur et le caractère sont choisis aléatoirement sous forme d'un entier (1 ou 2) et un char ('x' ou 'o')
 	joueur = random.randint(1,2)
 	caractere = random.choice(["x" , "o"])
 	while True :
