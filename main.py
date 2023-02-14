@@ -8,7 +8,7 @@ tableau = [['.', '.','.'],
 		   ['.', '.','.']]
 
 
-def afficherTabeau(tableau):
+def afficherTableau(tableau):
 	print("    [ 1 | 2 | 3 ]")
 	print()
 	for i,case in enumerate(tableau):
@@ -111,17 +111,17 @@ def jouer(tableau):
 		print("c'est le tours du joueur" , joueur)
 		print()
 		#Appelez la fonction pour afficher le tableau.
-		afficherTabeau(tableau)
+		afficherTableau(tableau)
 		choisirCase(tableau , joueur , character)
 		gagnant = verifierLignes(tableau)
 
 		if gagnant :
 			print("joueur " , joueur , "à gagné, Bravo !")
-			afficherTabeau(tableau)
+			afficherTableau(tableau)
 			return
 		if verifierEgalite(tableau) :
 			print("Egalité :\\")
-			afficherTabeau(tableau)
+			afficherTableau(tableau)
 			return
 
 		#Changez le tours du joueur
