@@ -1,3 +1,5 @@
  lego --server="https://acme.zerossl.com/v2/DV90" --tls-skip-verify --dns duckdns --email badr.ouarafana@axa.com -d supercert.duckdns.org run
 2025/01/14 16:28:27 [DEBUG] GET https://acme.zerossl.com/v2/DV90
 2025/01/14 16:28:27 Server requires External Account Binding. Use --eab with --kid and --hmac.
+
+./acme.sh --register-account -m badr.ouarafana@axa.com --eab-kid ENx8SLqHE2RUR94LxKbWHIhci7QRN9qB1t3WK2zqqww --eab-hmac-key ZDU1ZmU0YzYxNmVhMDgwYzU1MDQ3YTJjMWExMmVkZjM4NjY1ZDk1OTY3YzExNmVkMzhlYmEzYWFmZGY1YTZkNQ
