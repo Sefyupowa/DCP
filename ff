@@ -1,0 +1,24 @@
+ lego --server="https://acme-staging-v02.api.letsencrypt.org/directory" --dns duckdns --email badr.ouarafana@axa.com -d supercert.duckdns.org run
+2025/01/14 16:18:40 [DEBUG] GET https://acme-staging-v02.api.letsencrypt.org/directory
+2025/01/14 16:18:41 [INFO] [supercert.duckdns.org] acme: Obtaining bundled SAN certificate
+2025/01/14 16:18:41 [DEBUG] HEAD https://acme-staging-v02.api.letsencrypt.org/acme/new-nonce
+2025/01/14 16:18:41 [DEBUG] POST https://acme-staging-v02.api.letsencrypt.org/acme/new-order
+2025/01/14 16:18:41 [DEBUG] POST https://acme-staging-v02.api.letsencrypt.org/acme/authz/180098474/15702046924
+2025/01/14 16:18:42 [INFO] [supercert.duckdns.org] AuthURL: https://acme-staging-v02.api.letsencrypt.org/acme/authz/180098474/15702046924
+2025/01/14 16:18:42 [INFO] [supercert.duckdns.org] acme: Could not find solver for: tls-alpn-01
+2025/01/14 16:18:42 [INFO] [supercert.duckdns.org] acme: Could not find solver for: http-01
+2025/01/14 16:18:42 [INFO] [supercert.duckdns.org] acme: use dns-01 solver
+2025/01/14 16:18:42 [INFO] [supercert.duckdns.org] acme: Preparing to solve DNS-01
+2025/01/14 16:19:22 [INFO] [supercert.duckdns.org] acme: Trying to solve DNS-01
+2025/01/14 16:20:02 [INFO] [supercert.duckdns.org] acme: Checking DNS record propagation. [nameservers=google-public-dns-a.google.com:53,google-public-dns-b.google.com:53]
+2025/01/14 16:20:04 [INFO] Wait for propagation [timeout: 1m0s, interval: 2s]
+2025/01/14 16:20:44 [INFO] [supercert.duckdns.org] acme: Waiting for DNS record propagation.
+2025/01/14 16:21:26 [INFO] [supercert.duckdns.org] acme: Waiting for DNS record propagation.
+2025/01/14 16:21:28 [INFO] [supercert.duckdns.org] acme: Cleaning DNS-01 challenge
+2025/01/14 16:22:09 [DEBUG] POST https://acme-staging-v02.api.letsencrypt.org/acme/authz/180098474/15702046924
+2025/01/14 16:22:09 [INFO] Deactivating auth: https://acme-staging-v02.api.letsencrypt.org/acme/authz/180098474/15702046924
+2025/01/14 16:22:09 [DEBUG] POST https://acme-staging-v02.api.letsencrypt.org/acme/authz/180098474/15702046924
+2025/01/14 16:22:10 Could not obtain certificates:
+        error: one or more domains had a problem:
+[supercert.duckdns.org] propagation: time limit exceeded: last error: initial recursive nameserver: DNS call error: read udp [2001:861:e386:3900:5d36:b370:8c96:8131]:62360->[2001:4860:4860::8888]:53: i/o timeout [ns=google-public-dns-a.google.com:53, question='_acme-challenge.supercert.duckdns.org. IN  TXT']
+DNS call error: read udp [2001:861:e386:3900:5d36:b370:8c96:8131]:61594->[2001:4860:4860::8844]:53: i/o timeout [ns=google-public-dns-b.google.com:53, question='_acme-challenge.supercert.duckdns.org. IN  TXT']
