@@ -4,4 +4,4 @@
 
 ./acme.sh --register-account -m badr.ouarafana@axa.com --eab-kid ENx8SLqHE2RUR94LxKbWHIhci7QRN9qB1t3WK2zqqww --eab-hmac-key ZDU1ZmU0YzYxNmVhMDgwYzU1MDQ3YTJjMWExMmVkZjM4NjY1ZDk1OTY3YzExNmVkMzhlYmEzYWFmZGY1YTZkNQ --server https://one.digicert.com/mpki/api/v1/acme/v2/directory
 
-sudo  DUCKDNS_TOKEN=1931bd1a-54b8-4caa-a87b-adec861acf52-E lego --server https://one.digicert.com/mpki/api/v1/acme/v2/directory --dns duckdns --email="badr.ouarafana@axa.com" -d="superbadr.duckdns.org" --eab --kid ENx8SLqHE2RUR94LxKbWHIhci7QRN9qB1t3WK2zqqww --hmac ZDU1ZmU0YzYxNmVhMDgwYzU1MDQ3YTJjMWExMmVkZjM4NjY1ZDk1OTY3YzExNmVkMzhlYmEzYWFmZGY1YTZkNQ run
+ DUCKDNS_TOKEN=1931bd1a-54b8-4caa-a87b-adec861acf52 ./lego.exe --eab --kid  UzCKTzeK4MHdSE0r42DmiLpZ57_ieQhaJYiXdZVLeyY --hmac MDZjNzBlMDYzMWEyYTQ2MmNlYTIzZjliN2Y3MDViZjlhYTFmNTdhNjJlMDFmNjk0NDllYjFkNjE2N2U2M2EzMQ --server https://one.digicert.com/mpki/api/v1/acme/v2/directory --domains mycert3.duckdns.org --dns duckdns -m badr.ouarafana@axa.com run
